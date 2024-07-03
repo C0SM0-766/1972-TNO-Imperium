@@ -9644,10 +9644,25 @@ campaignTrail_temp.answer_feedback_json = [
     }
 ]
 
-campaignTrail_temp.candidate_image_url = "https://media.discordapp.net/attachments/869787836654710794/1125672707518898217/Yockey.png";
-campaignTrail_temp.running_mate_image_url = "https://media.discordapp.net/attachments/869787836654710794/1125672707736997888/Byers.png";
+campaignTrail_temp.candidate_image_url = "https://i.imgur.com/D1rd1nq.jpeg";
+campaignTrail_temp.running_mate_image_url = "https://static.tvtropes.org/pmwiki/pub/images/louis_t_byers.png";
 campaignTrail_temp.candidate_last_name = "Yockey";
 campaignTrail_temp.running_mate_last_name = "Byers";
+
+const style_overwrite = document.createElement("style");
+            style_overwrite.innerHTML = 
+            `#campaign_sign {
+            background-color: #000000;
+            border-color: #331d08;
+            }
+            .inner_window_question h3 {
+            background-color: #afb0b3;
+            }
+            .overlay_window h3 {
+            background-color: #afb0b3;
+            }
+            `;
+    document.head.appendChild(style_overwrite);
 
 // ENDINGS -- this is slightly more reliable than the ending code method
 
@@ -9736,7 +9751,7 @@ endingPicker = (out, totv, aa, quickstats) => {
     e.executable = []
 
     if (out == "tie") {
-        e.image = "https://media.discordapp.net/attachments/869787836654710794/1145780773383852052/colorized.png";
+        e.image = "https://www.thoughtco.com/thmb/8TGGH-kcG3URTQR4V-HvVLfK1ww=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/McGovern-George-72-3000-3x2gty-5c7611a5c9e77c0001f57b1d.jpg";
         e.header = `<h3>The Union Makes Us Strong!</h3>`
         e.pages = [
             `<p>That Finno-Mongolian parasite... This was not meant to happen, no, it shouldn't be happening. You were supposed to win this, victory was at hand, right in your grasp, and that damned Asiatic dog stole it from you. The immediate aftermath of election day is chaotic, liberals, conservatives, and your very own Vanguardist are taking to the streets to celebrate, protest, and riot respectively. The election will most certainly go to the House, and you have no chance of winning for you as noone would be willing to support you when there are several alternatives.</p><p> Eventually, after enough backroom deals, a deal is made between Progressives, Democrats, and Republicans, and Senator George McGovern of South Dakota who had previously lost the RDC nomination is hoisted into the Presidency as a compromise, sparking relief within the nation from moderates..</p>`,
@@ -9744,7 +9759,7 @@ endingPicker = (out, totv, aa, quickstats) => {
             `<p>Ultimately, future generations will remember this election for how bizzare it was. The issues at hand during it, the riots, the economy, the radicalism, and its dramatic conclusion. You will have inspired countless of your ilk to take up the mantle and to carry on your legacy, Hall has done the same, being remembered as a dangerous demagogue spoken in the same breathe as you and Adolf Hitler, or a champion of the sensible voter when there was none to fight for them, to give them a voice. Ultimately, your legacy will be that of a demagogue who accidentally revived liberalism, and future generations will study this election for years to come.</p>`
         ];
     } else if (quickstats[0] <= 1) {
-        e.image = "https://media.discordapp.net/attachments/818130397706846242/1139333807170932927/francis_parker_yockey.png";
+        e.image = "https://dev.lareviewofbooks.org/wp-content/uploads/2017/05/5-13-Mostrom-Yockey-Arrest-1960.jpeg";
         e.header = `<h3>THE TRIAL OF FRANCIS PARKER YOCKEY</h3>`
         e.pages = [
             `<p>This could not be happening. No, it should not be happening. Your doubters, the naysayers, the degenerates, the traitors, they are what cost you this election. Your rant on election day is heard by all in your campaign office, you tear up documents, charts, letters of consolation from what little supporters you still have but in the end, nothing can change the reality you are in. The reality that George Romney will become President with a trifecta.</p><p>The next few months are the worst of your life, the Vanguard and the wider NPP are destroyed, and you are the only one to blame. Among the casualties are Byers, John Schmitz, Tom Metzger, even Ted Kennedy, President Kennedy's brother. Everywhere you go, their staring eyes pierce right through your soul, no doubt laughing at you and your humiliation until you cannot bear it anymore and become a recluse.</p>`,
@@ -9755,12 +9770,12 @@ endingPicker = (out, totv, aa, quickstats) => {
         e.header = `<h3>It's 1972</h3>`;
         e.pages = [
             `<p><center><br><br><br>It's 1972, I am watching Francis Parker Yockey win the election against George Romney.</center><p>`,
-            `<p><center><br><br><br>It's 1976, I am watching Francis Parker Yockey win re-election as the National Gaurd gun down protestors in Manhatten protesting the American-Japanese War.</center><p>`,
+            `<p><center><br><br><br>It's 1976, I am watching Francis Parker Yockey win re-election as the National Gaurd gun down protestors in Manhattan protesting the American-Japanese War.</center><p>`,
             `<p><center><br><br><br>It's 1980, I am watching Francis Parker Yockey win re-election election as American troops land on the Japanese Home Islands.</center><p>`,
             `<p><center><br><br><br>It's 1984, I am watching the world go dark.</center><p>`
         ];
     } else if (quickstats[0] >= 500) {
-        e.image = "https://cdn.discordapp.com/attachments/1139445014452244540/1140402160497082469/yock.png";
+        e.image = "https://files.catbox.moe/6tt052.jpg";
         e.header = `<h3>IMPERIVM</h3>`;
         e.pages = [
             `<p>When the results came in, noone could believe it. Despite everything that happened, despite the debates, your repugnant ideas, your pseudo-intellectualism. Despite it all, you have prevailed and will become President of the United States, by over 500 electoral votes. Kennedy is in a state depression unseen since his brothers assassination in 1964, Romney has been filmed crying at news of your victory, even Strom Thurmond is in a state of absolute terror and horror. All the while Americans look on in fear as riots engulf the nation as a result of your victory which will eventually be supressed by your deployment of the National Guard and Army in major cities.<p><p>The NPP is in your court now, with Vanguardists taking to the street in celebration. The Progressives have been slaughtered down the ballot, losing every single last seat up for grabs in the Senate and 38 seats in the House. The Nationalists have suffered a similiar fate albeit to a lesser extent as the Vanguard gains at their expense, and if you decide to form a voting bloc with them you will have a comfortable 71 seat majority in the Senate.</p>`,
@@ -9768,7 +9783,7 @@ endingPicker = (out, totv, aa, quickstats) => {
             `<p>Ultimately, your legacy will be that of the greatest villain in America history. Your name will be spoken of in the same breath as Ben Tillman, Adolf Eichmann, Heinrich Himmler and Josef Mengle and will become synonmous with the labels of "tyrant" and "Fuhrer". Ultimately, your legacy will be that of a rotting America, of discrimination, hate, riots, and racial violence, and future generations can only "what if?". What if you had lost? America would almost certainly not have collapsed nor descended into civil war, an America where political and racial violence didn't define politics, a kinder, gentler nation. But the past is the past, and it cannot be changed.</p>`
         ]
     } else if (quickstats[0] >= 400) {
-        e.image = "https://media.discordapp.net/attachments/818130397706846242/1139560332352823318/madison-square-garden_nazi-rally_1_wide-b56e5c775b09c4d885f3e5fbadc173d80ebe5e4f-s1400-c100.png";
+        e.image = "https://files.catbox.moe/q2e8lq.jpg";
         e.header = `<h3>It Was Destined To Happen Here</h3>`;
         e.pages = [
             `<p>When the results came in, noone could believe it. Despite everything that happened, despite the debates, your repugnant ideas, your pseudo-intellectualism. Despite it all, you have prevailed and will become President of the United States by a landslide. Kennedy has reportedly entered a state of despair, Romney delivers a desondent concession speech where at times it feels like his legs are gonna give out, even Strom Thurmond is in a mix of predominantly fear, shock, and a small dosage of relief. All the while Americans look on in fear as riots not seen since the New York draft riots and Red Summer engulf the nation as a result of your victory, fearing you as much as the rioters and Klanmen partaking in the violence.<p><p>The NPP is all but yours to run for the time being. The Progressives have been slaughtered down the ballot, losing their seats to either Democrats, Nationalists, or Marxists. The Nationalists have lost seats in Congress to you, bring you ever closer to a Vanguard majority in the Senate, and if you decide to form a voting bloc with them you will have a comfortable 61 seat majority in the Senate.</p>`,
@@ -9784,7 +9799,7 @@ endingPicker = (out, totv, aa, quickstats) => {
             `<p>Historians will look back upon this election as a pivotal moment in American history, a moment where Americans, in their darkest hour, rejected radicalism, where they rejected totalitarianism, where they rejected the twin scourges of both Nazism and Communism. Ultimately, your legacy will be as the wannabe Hitler, where radicals infinitely less influential than you will idolize and obsess over you, pondering "what if?" in disappointment in what they lost, but the common man will ponder "what if?" in fear and relief that you are relegated to the dustbin of history.</p>`
         ]
     } else if (quickstats[0] <= 200) {
-        e.image = "https://media.discordapp.net/attachments/818130397706846242/1139423174103154799/gettyimages-3318023-1024x1024-transformed.jpeg";
+        e.image = "https://images.squarespace-cdn.com/content/v1/5c3f614d0dbda3b28a6c0ff1/1548441642480-OT1WNKQW06PN6CGJ81H1/george+romney.jpg?format=1000w";
         e.header = `<h3>The Expected Outcome</h3>`;
         e.pages = [
             `<p>Most people hoped this would happen, and happen it did. Despite your ranting, raving, and explosive fury, Romney will become President by the margins that many have predicted and there is nothing you can do to change that. Kennedy is relieved if somewhat worried, Romney is humble in his victory as he declares you a "respectable opponent" which he catches flak for from much of the political scene.<p><p>Luckily for the wider NPP, the Progressives and Nationalists can breathe a sigh of relief as the Marxists and Vanguard lost seats down the ballot. Noone knows who the nominee will be in, likely someone far less radical than you. John Anderson is the Nationalist favorite, whilst Progressives are behind Scoop Jackson.</p>`,
@@ -9792,7 +9807,7 @@ endingPicker = (out, totv, aa, quickstats) => {
             `<p>Ultimately, your legacy will be that of a dangerous demagogue, one that may have lost but one that also sewed the seeds of hate in America, seeds that have sprouted and to this day plague America and the world at large. When historians wonder what your presidency might have looked like, they imagine an America set on the path of dystopia, of totalitarianism, of Nazism and hate, but one that never came to pass. They can only be thankful that their parents were sensible enough to reject you and your hate.</p>`
         ]
     } else if (quickstats[0] <= 267) {
-        e.image = "https://media.discordapp.net/attachments/818130397706846242/1139437445922959461/georgeromney.png";
+        e.image = "https://files.catbox.moe/az5fnt.jpg";
         e.header = `<h3>A Defeat Or a Vindication?</h3>`;
         e.pages = [
             `<p>Most people hoped this would happen, and happen it did. Despite your ranting, raving, and explosive fury, Romney will become President, but it was close, too close. A couple thousand votes in a state here and there were all that it took to determine the election for Romney. Kennedy is worried as you were supposed to lose in a landslide, not have Romney on the ropes. Romney has stayed silent, simply lapping up the glory of his victory, seems like he's worried at how close things were too.</p><p>Luckily for you and the Vanguard, you and your cabal have actually gained seats in Congress, even if the gains are minuscule. Meanwhile, you can't help but notice the worry on the faces of men like Scoop Jackson, Spiro Agnew, and Sam Yorty, and you certainly revel in it even in defeat. But what about you? Your political career is certainly in good shape, you've vindicated and brought your ideas into the mainstream. Even if your ideas fail to take hold in your lifetime you have doubtlessly inspired thousands to take up the mantle. Who knows, if you get lucky, you might be able to run in 1976.</p>`,
@@ -9800,14 +9815,14 @@ endingPicker = (out, totv, aa, quickstats) => {
             `<p>Ultimately, your legacy will be a frightening one, for you may have lost this battle but you certainly did not lose the war. The seeds of hate and fearmongering which you have planted will grow like vines, suffocating anything they touch and get ahold of until they have subsumed it. When historians wonder what your presidency might have looked like, they imagine an America set on the path of dystopia, of totalitarianism, of Nazism and hate, but one that never came to pass, yet very nearly did. They can only be thankful that you failed.</p>`
         ]
     } else if (quickstats[0] >= 300) {
-        e.image = "https://media.discordapp.net/attachments/818130397706846242/1139547900532236339/gvmer.png";
+        e.image = "https://files.catbox.moe/6tt052.jpg";
         e.header = `<h3>It Happened Here</h3>`;
         e.pages = [
-            `<p>When the results came in, noone could believe it. Despite everything that happened, despite the debates, your repugnant ideas, your pseudo-intellectualism. Despite it all, you have prevailed and will become President of the United States by a comfortable margain. Kennedy is in a state of despair, Romney delivers a despondent concession speech where it seems like his legs will give out at any moment, even Strom Thurmond is in a mix of fear, shock, and relief. All the while Americans look on in fear as riots engulf the nation as a result of your victory, watching as Klanmen take to the streets and as Black Panthers lay fire to cities.<p><p>The NPP is almost certainly yours to run for the time being. The Progressives have been slaughtered down the ballot, losing their seats to either Democrats, Nationalists, or Marxists. The Nationalists have bled a few seats at the gain of you and the Vanguard, and if you decide to form a voting bloc with them you will have a nice 57 seat majority in the Senate.</p>`,
+            `<p>When the results came in, noone could believe it. Despite everything that happened, despite the debates, your repugnant ideas, your pseudo-intellectualism. Despite it all, you have prevailed and will become President of the United States by a comfortable margin. Kennedy is in a state of despair, Romney delivers a despondent concession speech where it seems like his legs will give out at any moment, even Strom Thurmond is in a mix of fear, shock, and relief. All the while Americans look on in fear as riots engulf the nation as a result of your victory, watching as Klanmen take to the streets and as Black Panthers lay fire to cities.<p><p>The NPP is almost certainly yours to run for the time being. The Progressives have been slaughtered down the ballot, losing their seats to either Democrats, Nationalists, or Marxists. The Nationalists have bled a few seats at the gain of you and the Vanguard, and if you decide to form a voting bloc with them you will have a nice 57 seat majority in the Senate.</p>`,
             `<p>The Vanguard is alive and thriving. Byers will ascend to the Vice Presidency, the Hess to your Hitler, whilst Crommelin absolutely trounced John Sparkman of all people who is forced to return to irrelevancy, even Madole, repugnant as he is, managed to win a seat in the House after extensive funding and pure luck. Yet the most shocking of all is your victory and your ascendacy to the Presidency. You will most certainly pursue your agenda as you turn America into a totalitarian nightmare, yet you are unlikely to be able to push through all that you wish through Congress without cooperation with the nationalists.<p><p>Historians will look back upon this election as a pivotal moment in American history, a moment where Americans fought against each other, where the desparate and the radical accepted totalitarianism into their homes with the ballot, and where they prostrated before the idol of Hitlerism.</p>`,
             `<p>Ultimately, your legacy will be that of the greatest villain in America history. Your name will be spoken of in the same breath as Ben Tillman and Adolf Eichmann and will become synonmous with the labels of "tyrant" and "Fuhrer". Ultimately, your legacy will be that of a rotting America, of discrimination, hate, riots, and racial violence, and future generations can only "what if?". What if you had lost? America would most certainly be a much less bigoted place, an America where political and racial violence didn't define politics, a kinder, gentler nation. But the past is the past, and it cannot be changed.</p>`        ]
     } else if (quickstats[0] >= 268) {
-        e.image = "https://media.discordapp.net/attachments/818130397706846242/1139547900532236339/gvmer.png";
+        e.image = "https://files.catbox.moe/6tt052.jpg";
         e.header = `<h3>It Happened Here</h3>`;
         e.pages = [
             `<p>When the results came in, noone could believe it. Despite everything that happened, despite the debates, your repugnant ideas, your pseudo-intellectualism. Despite it all, you have prevailed and will become President of the United States, but by a narrow margain. Kennedy is in a state of shock, Romney delivers a despondent concession speech, even Strom Thurmond is in a mix of fear, shock, and relief. All the while Americans look on in fear as riots engulf the nation as a result of your victory, watching as Klanmen take to the streets and as Black Panthers lay fire to cities.<p><p>The NPP is almost certainly yours to run for the time being. The Progressives have been slaughtered down the ballot, losing their seats to either Democrats, Nationalists, or Marxists. The Nationalists have gained seats alongside the Vanguard, and if you decide to form a voting bloc with them you will have a slim 52 seat majority in the Senate.</p>`,
@@ -9843,3 +9858,4 @@ setMusic = (url, override = false) => {
     aud.play();
     return 0;
 }
+
