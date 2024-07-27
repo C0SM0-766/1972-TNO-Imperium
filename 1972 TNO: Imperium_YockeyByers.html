@@ -9653,13 +9653,13 @@ const style_overwrite = document.createElement("style");
             style_overwrite.innerHTML = 
             `#campaign_sign {
             background-color: #000000;
-            border-color: #331d08;
+            border-color: #633b27;
             }
             .inner_window_question h3 {
             background-color: #afb0b3;
             }
             .overlay_window h3 {
-            background-color: #afb0b3;
+            background-color: #666463;
             }
             `;
     document.head.appendChild(style_overwrite);
@@ -9729,7 +9729,7 @@ endingConstructor = (a = 1) => {
 
 e.header = "<h1>Error-Handling Message (oops)</h1>";
 e.pages = [
-    "<p>This is an error handler</p>", "<p>I dun goof</p>", "<p>Contact me on my Discord main (marin#3730), my alt (Jason Luv#5704) or Reddit (u/marinBlackMesa) and we'll see if I can fix up your problem.</p>",
+    "<p>This is an error handler</p>", "<p>I dun goof</p>", "<p>Contact me on my Discord main (marin#3730), my alt (Jason Luv#5704) or Reddit (u/marinBlackMesa) and we'll see if I can fix up your problem.<br><br>''Too bad Marin's gone. Oh well, I ain't fixing any of the shit you encountered.''<br><br>~ C0SM0",
     "<p>Sorry!</p>"
 ];
 e.page = 0;
@@ -9783,7 +9783,7 @@ endingPicker = (out, totv, aa, quickstats) => {
             `<p>Ultimately, your legacy will be that of the greatest villain in America history. Your name will be spoken of in the same breath as Ben Tillman, Adolf Eichmann, Heinrich Himmler and Josef Mengle and will become synonmous with the labels of "tyrant" and "Fuhrer". Ultimately, your legacy will be that of a rotting America, of discrimination, hate, riots, and racial violence, and future generations can only "what if?". What if you had lost? America would almost certainly not have collapsed nor descended into civil war, an America where political and racial violence didn't define politics, a kinder, gentler nation. But the past is the past, and it cannot be changed.</p>`
         ]
     } else if (quickstats[0] >= 400) {
-        e.image = "https://files.catbox.moe/q2e8lq.jpg";
+        e.image = "https://files.catbox.moe/oe2tmu.jpg";
         e.header = `<h3>It Was Destined To Happen Here</h3>`;
         e.pages = [
             `<p>When the results came in, noone could believe it. Despite everything that happened, despite the debates, your repugnant ideas, your pseudo-intellectualism. Despite it all, you have prevailed and will become President of the United States by a landslide. Kennedy has reportedly entered a state of despair, Romney delivers a desondent concession speech where at times it feels like his legs are gonna give out, even Strom Thurmond is in a mix of predominantly fear, shock, and a small dosage of relief. All the while Americans look on in fear as riots not seen since the New York draft riots and Red Summer engulf the nation as a result of your victory, fearing you as much as the rioters and Klanmen partaking in the violence.<p><p>The NPP is all but yours to run for the time being. The Progressives have been slaughtered down the ballot, losing their seats to either Democrats, Nationalists, or Marxists. The Nationalists have lost seats in Congress to you, bring you ever closer to a Vanguard majority in the Senate, and if you decide to form a voting bloc with them you will have a comfortable 61 seat majority in the Senate.</p>`,
@@ -9815,6 +9815,7 @@ endingPicker = (out, totv, aa, quickstats) => {
             `<p>Ultimately, your legacy will be a frightening one, for you may have lost this battle but you certainly did not lose the war. The seeds of hate and fearmongering which you have planted will grow like vines, suffocating anything they touch and get ahold of until they have subsumed it. When historians wonder what your presidency might have looked like, they imagine an America set on the path of dystopia, of totalitarianism, of Nazism and hate, but one that never came to pass, yet very nearly did. They can only be thankful that you failed.</p>`
         ]
     } else if (quickstats[0] >= 300) {
+        return "<audio loop='false' autoplay='true' src='https://files.catbox.moe/vn5qjv.mp3' style='display:none;'></audio>
         e.image = "https://files.catbox.moe/6tt052.jpg";
         e.header = `<h3>It Happened Here</h3>`;
         e.pages = [
